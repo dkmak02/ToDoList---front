@@ -46,11 +46,17 @@
   border-radius: 6px;
   margin: 0.5rem;
   transition: all 0.3s ease;
+}
+.actions button {
+  border: none;
+  background-color: white;
+  color: #202020;
+  font-weight: bold;
+  font-size: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
-}
-.actions a {
-  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 768px) {
