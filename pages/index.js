@@ -1,8 +1,5 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import { Fragment } from "react";
+import AuthInfo from "./../components/auth/info";
 export default function HomePage() {
-  return <h1>XDD</h1>;
+  return <AuthInfo />;
 }
