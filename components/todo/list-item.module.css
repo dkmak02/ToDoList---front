@@ -1,0 +1,61 @@
+.list {
+  display: block;
+  background-color: #202020;
+  border-radius: 6px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+.sep {
+  border-bottom: 3px solid #ec9a1d;
+  color: rgb(165, 157, 157);
+  margin-right: 1rem;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.list_container {
+  height: 205px;
+  overflow-y: auto;
+}
+
+.list_container ul {
+  list-style: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.list_container li {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  margin-bottom: 0.5rem;
+  word-wrap: break-word;
+  width: auto;
+  color: aqua;
+}
+
+.list_container li::before {
+  content: "\2022";
+  margin-right: 5px;
+}
+.list_container::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+.list_container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the color of the scrollbar track */
+  border-radius: 6px;
+}
+
+.list_container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the scrollbar thumb */
+  border-radius: 3px; /* Set the radius of the scrollbar thumb */
+}
+
+.list_container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color of the scrollbar thumb on hover */
+}
+.title {
+  display: flex;
+  /* flex-direction: row; */
+}
