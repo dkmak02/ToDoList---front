@@ -6,9 +6,10 @@ function FullList(props) {
     <div className={c.modal1}>
       <div className={c.content}>
         {props.name}
+        {/* {props.id} */}
         <ul className={c.task}>
           {props.items.map((item) => (
-            <li key={i++}>{item}</li>
+            <li key={i++}>{item.activity}</li>
           ))}
         </ul>
       </div>

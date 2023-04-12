@@ -25,13 +25,15 @@ function ListItem(props) {
         <div className={c.list_container}>
           <ul>
             {props.items.map((item) => (
-              <li key={i++}>{item}</li>
+              <li key={i++}>{item.activity}</li>
             ))}
           </ul>
         </div>
       </li>
       {backdrop && <Backdrop onCancel={backdropHandler} />}
-      {fullList && <FullList name={props.name} items={props.items} />}
+      {fullList && (
+        <FullList name={props.name} items={props.items} id={props._id} />
+      )}
     </Fragment>
   );
 }
