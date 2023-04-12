@@ -1,5 +1,6 @@
 const { Fragment } = require("react");
 import c from "./info.module.css";
+import cl from "./../layout/main-nav.module.css";
 import Link from "next/link";
 import Login from "./login";
 import Register from "./register";
@@ -24,17 +25,12 @@ function AuthInfo() {
   }
   return (
     <Fragment>
-      <div className={c.list}>
-        <h1>To create, add lists login/register</h1>
-        <ul className={c.actions}>
-          <li>
-            <button onClick={loginHandler}>Login</button>
-          </li>
-          <li>
-            <button onClick={registerHandler}>Register</button>
-          </li>
-        </ul>
-      </div>
+      <li>
+        <button onClick={loginHandler}>Login</button>
+      </li>
+      <li>
+        <button onClick={registerHandler}>Register</button>
+      </li>
       {backdrop && <Backdrop onCancel={backdropHandler} />}
       {isLogin && <Login />}
       {isRegister && <Register />}

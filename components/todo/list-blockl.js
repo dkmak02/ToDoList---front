@@ -5,7 +5,8 @@ import { useState } from "react";
 import c from "./list-block.module.css";
 import ListItem from "./list-item";
 function ListBlock() {
-  const token = "";
+  const token =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjA1OTM1MTdiNjAzNjc5NDhjN2M5OSIsImlhdCI6MTY4MTMwMTUyOSwiZXhwIjoxNjg5MDc3NTI5fQ.zVP6lr33C7wgX7cECqL9XP-p8IzPSZTLVS8q9zDg1XQ";
   const [data, setData] = useState([]);
   const fetchData = async () => {
     const response = await fetch("http://localhost:3001/api/v1/lists", {

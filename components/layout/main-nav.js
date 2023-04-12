@@ -1,5 +1,6 @@
 import Link from "next/link";
 import c from "./main-nav.module.css";
+import AuthInfo from "../auth/info";
 function MainNav() {
   return (
     <header className={c.header}>
@@ -8,12 +9,7 @@ function MainNav() {
       </div>
       <nav className={c.navigation}>
         <ul>
-          <li>
-            <Link href="/xd">Posts</Link>
-          </li>
-          <li>
-            <Link href="/xd">Contact</Link>
-          </li>
+          <AuthInfo />
         </ul>
       </nav>
     </header>
